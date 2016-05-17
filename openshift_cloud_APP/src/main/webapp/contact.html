@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Adeeb</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contact.css"/>
+</head>
+<body>
+    <!-- Nav bar-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">ITM 415</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html" class="r">Index Page</a></li>
+                    <li><a href="resume.html" class="r">Resume</a></li>
+                    <li class ="active r"><a href="contact.html">Contact me!</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End nav bar-->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Contact Me
+                <small>Adeeb</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="active">Contact</li>
+            </ol>
+        </div>
+            <!-- Contact Form -->
+            <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Send Adeeb a Message</h3>
+                    <a href="https://twitter.com/adeebahmed26" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @adeebahmed26</a>
+                    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                    <br />
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label>Full Name:</label>
+                                <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block"></p>
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label>Email Address:</label>
+                                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label>Message:</label>
+                                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                            </div>
+                        </div>
+                        <div id="success"></div>
+                        <!-- For success/fail messages -->
+                        <button onclick="sendEmail();" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <!-- /.row -->
+    </div>
+    <!-- /.row -->
+    <script>
+        function sendEmail()
+        {
+            document.getElementById("name").innerHTML = "";
+            document.getElementById("email").innerHTML = "";
+            document.getElementById("message").innerHTML = "";
+            alert("Message sent!");
+        }
+    </script>
+    <hr />
+</body>
+</html>

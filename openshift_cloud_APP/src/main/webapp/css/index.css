@@ -1,0 +1,68 @@
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width:50%;
+  max-height:720px; 
+  border: 0;
+  }
+  
+.r{
+	font-family:'Trebuchet MS';
+	font-size:20px;
+}
+  
+ul, li
+{
+    list-style-type: none;
+}
+
+#slides{
+		margin-left:420px;
+}
+
+.row{
+	margin-left:100px;
+}
+
+.imgcaption{
+	margin-left:150px;
+	font-size: 24px;
+}
+
+#mainContent{
+	margin-left:12px;
+}
+
+h2,h3{
+	font-family: 'Trebuchet MS';
+}
+
+.link{
+	color:red;
+	font-size:2;
+	font-family: 'Trebuchet MS';
+}
